@@ -1,0 +1,13 @@
+C:\Users\JoJol\UrFU\web\PayService\PayService\bin\Debug\netcoreapp2.0\PayService.Model.dll
+C:\Users\JoJol\UrFU\web\PayService\PayService\obj\Debug\netcoreapp2.0\PayService.csprojResolveAssemblyReference.cache
+C:\Users\JoJol\UrFU\web\PayService\PayService\obj\Debug\netcoreapp2.0\PayService.csproj.CoreCompileInputs.cache
+C:\Users\JoJol\UrFU\web\PayService\PayService\obj\Debug\netcoreapp2.0\PayService.AssemblyInfoInputs.cache
+C:\Users\JoJol\UrFU\web\PayService\PayService\obj\Debug\netcoreapp2.0\PayService.AssemblyInfo.cs
+C:\Users\JoJol\UrFU\web\PayService\PayService\bin\Debug\netcoreapp2.0\PayService.deps.json
+C:\Users\JoJol\UrFU\web\PayService\PayService\bin\Debug\netcoreapp2.0\PayService.runtimeconfig.json
+C:\Users\JoJol\UrFU\web\PayService\PayService\bin\Debug\netcoreapp2.0\PayService.runtimeconfig.dev.json
+C:\Users\JoJol\UrFU\web\PayService\PayService\bin\Debug\netcoreapp2.0\PayService.dll
+C:\Users\JoJol\UrFU\web\PayService\PayService\bin\Debug\netcoreapp2.0\PayService.pdb
+C:\Users\JoJol\UrFU\web\PayService\PayService\bin\Debug\netcoreapp2.0\PayService.Model.pdb
+C:\Users\JoJol\UrFU\web\PayService\PayService\obj\Debug\netcoreapp2.0\PayService.dll
+C:\Users\JoJol\UrFU\web\PayService\PayService\obj\Debug\netcoreapp2.0\PayService.pdb

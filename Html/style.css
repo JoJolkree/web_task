@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Geometria";
+    src: url("fonts/Geometria.otf");
+}
+
+h2 {
+    font-family: Geometria, Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.header-contacts {
+    width: 60%;
+    float: left;
+}
+
+.header-image {
+    max-width: 200px;
+}
+
+.header-contacts-row {
+    display: block;
+}
+
+.phone-number {
+    display: inline-block;
+    margin: 15px;
+    margin-left: 0;
+    color: #404040;
+}
+
+.header-link {
+    display: inline-block;
+    margin: 15px;
+    margin-left: 0;
+    color: blue;
+    text-decoration: none;
+    font-family: Geometria, Arial, Helvetica, sans-serif;
+}
+
+.header-link :active {
+    color: blue;
+}
+
+.body-pay-area {
+    width: 100%;
+    margin:auto;
+    padding-top: 60px;
+}
+
+.pay-links {
+    display: inline-block;
+}
+
+.pay-link {
+    display: inline-block;
+    margin: 15px;
+    margin-left: 0;
+    font-family: Geometria, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: blue;
+    text-decoration: none;
+}
+
+.pay-link-current {
+    color: black;
+    pointer-events: none;
+}
+ 
+.pay-link:active {
+    color: blue;
+}
+
+.card-switch-area {
+    display: block;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.active-card {
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    font-family: Geometria, Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    padding: 5px;
+    background: #ccc;
+    margin: 5px;
+    margin-left: 0;
+}
+
+.inactive-card {
+    display: inline-block;
+    font-family: Geometria, Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    padding: 5px;
+    margin: 5px;
+    margin: 0;
+}
+
+.pay-area {
+    display: block;
+}
+
+.card-form {
+    border: solid 1px #eee;
+    border-radius: 7px;
+    max-width: 500px;
+    background: #eee;
+}
+
+.card-number {
+    display: block;
+    border-bottom: solid 4px #ccc;
+    background: #eee !important;
+    outline: none;
+    height: 36px;
+    min-width: 250px;
+    font-size: 14pt;
+    font-family: Geometria, Arial, Helvetica, sans-serif;
+    margin: 5px;
+    box-shadow: none;
+}
+
+.card-number :focus {
+    border-bottom-color: green;
+}
