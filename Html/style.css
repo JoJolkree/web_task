@@ -271,9 +271,9 @@ body {
 
 @media screen and (max-device-width: 930px) 
 {
-    /* body {
-        /* margin: 20px; */
-    } */
+    body {
+        width: 96%;
+    }
 
     .card-form {
         display: block;
