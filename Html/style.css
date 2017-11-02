@@ -13,7 +13,7 @@ body {
     /* min-width: 500px; */
     max-width: 1200px;
     margin: auto;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .header {
@@ -272,7 +272,7 @@ body {
 @media screen and (max-device-width: 930px) 
 {
     body {
-        /* margin: 20px; */
+        margin: 20px;
     }
 
     .card-form {
