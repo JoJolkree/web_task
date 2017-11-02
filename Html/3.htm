@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Личный кабинет предпринимателя</title>
+        <link href="style.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    </head>
+    <body>
+        <div class="header with-delimiter">
+            <div class="header-contacts">
+                <h2>Индивидуальный предприниматель Иванов Иван Иванович</h2>
+                <div class="header-contacts-row">
+                    <p class="phone-number">+79123456789</p>
+                    <a class="header-link" href="#">www.ivanov.com</a>
+                    <a class="header-link" href="#">ivan@ivanov.com</a>
+                </div>
+                <div class="header-contacts-row">
+                    <a class=header-link href="#">Информация о компании</a>
+                </div>
+                <div class="header-contacts-row">
+                    <a class=header-link href="#">Показать реквизиты</a>                
+                </div>
+            </div>
+            <img class="header-image" src="img/header.jpg" />
+        </div>
+
+        <!-- Формочка -->
+        <div class="body-pay-area with-delimiter">
+            <div class=pay-links>
+                <a class="pay-link" href="#">Заплатить</a>
+                <a class="pay-link pay-link-current" href="#">Запросить платеж</a>
+            </div>
+            <div class="pay-area">
+                <form class="pay-form">                            
+                    <p class="about-block-caption"><strong>Создайте платёжку, а Индивидуальный предприниматель Иванов Иван Иванович подпишет её у себя Интернет-банке</strong></p>
+                    <div class="right-block-full-field">
+                        <p class="comments-right-block">ИНН получателя</p>
+                        <input class="field-right-block" type="text" placeholder="ИНН или название плательщика">
+                    </div>
+                    <div class="right-block-full-field">
+                        <p class="comments-right-block">БИК</p>
+                        <input class="field-right-block" type="text" placeholder="9 цифр">
+                    </div>
+                    <div class="right-block-full-field">
+                        <p class="comments-right-block">Номер счёта</p>
+                        <input class="field-right-block" type="text" placeholder="20 цифр">
+                    </div>
+                    <div class="right-block-full-field">
+                        <p class="comments-right-block">За что</p>
+                        <input class="field-right-block" type="text" placeholder="Комментарий">
+                    </div>
+                    <div class="right-block-full-field">
+                        <p class="comments-right-block">Сколько</p>
+                        <input class="field-right-block" type="text" placeholder="От 1 000 до 75 000 руб.">
+                    </div>
+                    <div class="right-block-full-field">
+                        <p class="comments-right-block">Номер телефона</p>
+                        <input class="field-right-block" type="text" value="+7">
+                    </div>
+                    <div class="right-block-full-field">
+                        <p class="comments-right-block">Эл. почта</p>
+                        <input class="field-right-block" type="text" placeholder="Для уведомлений об оплате">
+                    </div>
+                    <input type="submit" class="pay-button" value="Создать платеж" />
+                </form>            
+            </div>
+        </div>
+        <!-- /Формочка -->
+
+        <div class="about-area">
+            <h2>О компании Индивидуальный предприниматель Иванов Иван Иванович</h2>
+            <div class="about-block">
+                <img class="about-block-img" src="img/about1.jpg" />
+                <p class="about-block-caption">Lorem ipsum dolor sit amet</p>
+                <p class="about-block-price">128₽</p>
+            </div>
+            <div class="about-block">
+                <img class="about-block-img" src="img/about2.jpg" />
+                <p class="about-block-caption">Lorem ipsum</p>
+                <p class="about-block-price">128₽</p>                
+            </div>
+            <div class="about-block">
+                <img class="about-block-img" src="img/about3.jpg" />
+                <p class="about-block-caption">Lorem ipsum</p>
+                <p class="about-block-price">128₽</p>                
+            </div>
+
+            <p class="footer-caption">Самолёт — воздушное судно, предназначенное для полётов в атмосфере с помощью силовой установки, создающей тягу, и неподвижного, относительно других частей аппарата крыла, создающего подъёмную силу.</p>
+        </div>
+    </body>
+</html>
