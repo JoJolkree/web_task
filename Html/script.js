@@ -1,6 +1,6 @@
 function validateCurrency(inp) {
     if (parseInt(inp.value) < 1000) inp.value = "1 000";
-    if (parseInt(inp.value > 75000)) inp.value = "75 000";
+    if (parseInt(inp.value) > 75000) inp.value = "75 000";
 }
 
 function checkIsDigit(event) {
@@ -37,7 +37,7 @@ function cardDateFormat(inp) {
             for(var i = 0; i < v.length; i++)
             {
                 result += v.charAt(i);
-                if(i == 1) result += "/";                
+                if(i == 1 && v.length >= 3) result += "/";                
             }
         }
     }

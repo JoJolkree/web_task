@@ -4,7 +4,7 @@
         <title>Личный кабинет предпринимателя</title>
         <link href="style.css" rel="stylesheet" />
         <script src="script.js"></script>
-        <meta name="viewport" content="width=device-width; initial-scale=0.9">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
     </head>
     <body>
         <div class="header with-delimiter">
@@ -49,7 +49,7 @@
                         </div>
                             <input type="text" class="field-in-card" onkeyup="cardNumberFormat(this)" onkeypress="return checkIsDigit(event)" maxLength="19" placeholder="Номер карты"/>
                             <input type="text" class="field-in-card date-cvc-field" onkeypress="return checkIsDigit(event)" onkeyup="cardDateFormat(this)" maxLength="5" onkeyUp="cardDateFormat(this)" onkeypress="return checkIsDigit(event)" placeholder="ММ/ГГ" />
-                            <input type="text" class="field-in-card date-cvc-field" maxLength="3" onkeypress="return checkIsDigit(event)" placeholder="CVC" />
+                            <input type="password" class="field-in-card date-cvc-field" maxLength="3" onkeypress="return checkIsDigit(event)" placeholder="CVC" />
                     </div>
 
                     <br />
