@@ -1,0 +1,33 @@
+<app-bank-pay-switch></app-bank-pay-switch>
+<div class="pay-area">
+    <form class="pay-form">                            
+        <div class="card-form">
+            <div class="logos-row">
+                <img class="card-logo" src="/assets/img/visa.svg" />
+                <img class="card-logo" src="/assets/img/mastercard.svg" />
+                <img class="card-logo" src="/assets/img/maestro.svg" />   
+            </div>
+                <input type="text" class="field-in-card" maxLength="19"  [(ngModel)]="payData.CardNumber" name="cardnumber" (keyup)="formatCardNumber()" placeholder="Номер карты"/>
+                <input type="text" class="field-in-card date-cvc-field" [(ngModel)]="payData.ExpirationDate" name="expirationdate" (keyup)="formatDate()" maxLength="5" placeholder="ММ/ГГ" />
+                <input type="password" class="field-in-card date-cvc-field" maxLength="3" [(ngModel)]="payData.CVC" name="cvc" (keyup)="numbersOnly()" placeholder="CVC" number/>
+        </div>
+
+        <br />
+
+        <div class="right-form-block">
+            <div class="right-block-full-field">
+                <p class="comments-right-block">Сумма</p>
+                <input type="text" class="field-right-block" id="currency" [(ngModel)]="payData.Sum" name="sum" (change)="validateSum()" maxLength="5" placeholder="От 1 000 до 75 000" />
+            </div>
+            <div class="right-block-full-field">
+                <p class="comments-right-block">Комментарий</p>
+                <input type="text" class="field-right-block" [(ngModel)]="payData.Comment" name="comment" maxlength="150" placeholder="До 150 символов" />
+            </div>
+            <div class="right-block-full-field">
+                <p class="comments-right-block">Ваша эл. почта</p>
+                <input type="text" class="field-right-block" [(ngModel)]="payData.Email" name="email" placeholder="Для квитанций об оплате" />
+            </div>
+            <input type="submit" class="pay-button" value="Заплатить" />
+        </div>
+    </form>            
+</div>

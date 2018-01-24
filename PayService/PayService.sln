@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayService", "PayService\PayService.csproj", "{0B35D9D7-0776-4D11-8DC8-102BE5B99E41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayService.Model", "PayService.Model\PayService.Model.csproj", "{9832EF69-C353-4C00-B384-A2E738C4036F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayService.Model", "PayService.Model\PayService.Model.csproj", "{9832EF69-C353-4C00-B384-A2E738C4036F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayService.Front", "PayService.Front\PayService.Front.csproj", "{6A80EA68-E542-43CE-B090-E0052FE27467}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayService.Angular", "PayService.Angular\PayService.Angular.csproj", "{495C3220-7B79-40A4-B6A8-1A0C309D0F75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayService.Angular3", "PayService.Angular3\PayService.Angular3.csproj", "{88A7B987-A828-4771-AC36-E91E0C5AF7DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0B35D9D7-0776-4D11-8DC8-102BE5B99E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B35D9D7-0776-4D11-8DC8-102BE5B99E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B35D9D7-0776-4D11-8DC8-102BE5B99E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B35D9D7-0776-4D11-8DC8-102BE5B99E41}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9832EF69-C353-4C00-B384-A2E738C4036F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9832EF69-C353-4C00-B384-A2E738C4036F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9832EF69-C353-4C00-B384-A2E738C4036F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9832EF69-C353-4C00-B384-A2E738C4036F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A80EA68-E542-43CE-B090-E0052FE27467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A80EA68-E542-43CE-B090-E0052FE27467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A80EA68-E542-43CE-B090-E0052FE27467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A80EA68-E542-43CE-B090-E0052FE27467}.Release|Any CPU.Build.0 = Release|Any CPU
+		{495C3220-7B79-40A4-B6A8-1A0C309D0F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495C3220-7B79-40A4-B6A8-1A0C309D0F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495C3220-7B79-40A4-B6A8-1A0C309D0F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495C3220-7B79-40A4-B6A8-1A0C309D0F75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88A7B987-A828-4771-AC36-E91E0C5AF7DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A7B987-A828-4771-AC36-E91E0C5AF7DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A7B987-A828-4771-AC36-E91E0C5AF7DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A7B987-A828-4771-AC36-E91E0C5AF7DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

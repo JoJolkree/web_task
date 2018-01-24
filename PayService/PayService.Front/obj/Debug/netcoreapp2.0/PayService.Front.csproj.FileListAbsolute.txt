@@ -1,0 +1,11 @@
+C:\Users\JoJol\UrFU\web\PayService\PayService.Front\obj\Debug\netcoreapp2.0\PayService.Front.csprojResolveAssemblyReference.cache
+C:\Users\JoJol\UrFU\web\PayService\PayService.Front\obj\Debug\netcoreapp2.0\PayService.Front.csproj.CoreCompileInputs.cache
+C:\Users\JoJol\UrFU\web\PayService\PayService.Front\obj\Debug\netcoreapp2.0\PayService.Front.AssemblyInfoInputs.cache
+C:\Users\JoJol\UrFU\web\PayService\PayService.Front\obj\Debug\netcoreapp2.0\PayService.Front.AssemblyInfo.cs
+C:\Users\JoJol\UrFU\web\PayService\PayService.Front\bin\Debug\netcoreapp2.0\PayService.Front.deps.json
+C:\Users\JoJol\UrFU\web\PayService\PayService.Front\bin\Debug\netcoreapp2.0\PayService.Front.runtimeconfig.json
+C:\Users\JoJol\UrFU\web\PayService\PayService.Front\bin\Debug\netcoreapp2.0\PayService.Front.runtimeconfig.dev.json
+C:\Users\JoJol\UrFU\web\PayService\PayService.Front\bin\Debug\netcoreapp2.0\PayService.Front.dll
+C:\Users\JoJol\UrFU\web\PayService\PayService.Front\bin\Debug\netcoreapp2.0\PayService.Front.pdb
+C:\Users\JoJol\UrFU\web\PayService\PayService.Front\obj\Debug\netcoreapp2.0\PayService.Front.dll
+C:\Users\JoJol\UrFU\web\PayService\PayService.Front\obj\Debug\netcoreapp2.0\PayService.Front.pdb

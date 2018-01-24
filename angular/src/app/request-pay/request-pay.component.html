@@ -1,0 +1,34 @@
+<div class="pay-area">
+    <form class="pay-form">                            
+        <p class="about-block-caption"><strong>Создайте платёжку, а Индивидуальный предприниматель Иванов Иван Иванович подпишет её у себя Интернет-банке</strong></p>
+        <div class="right-block-full-field">
+            <p class="comments-right-block">ИНН получателя</p>
+            <input class="field-right-block" [(ngModel)]="payData.Sender" name="sender" type="text" placeholder="ИНН или название плательщика">
+        </div>
+        <div class="right-block-full-field">
+            <p class="comments-right-block">БИК</p>
+            <input class="field-right-block" [(ngModel)]="payData.BIC" name="bic" maxlength="9" (keyup)="formatBic()" type="text" placeholder="9 цифр">
+        </div>
+        <div class="right-block-full-field">
+            <p class="comments-right-block">Номер счёта</p>
+            <input class="field-right-block" [(ngModel)]="payData.Number" name="number" maxlength="20" (keyup)="formatNumber()" type="text" placeholder="20 цифр">
+        </div>
+        <div class="right-block-full-field">
+            <p class="comments-right-block">За что</p>
+            <input class="field-right-block" [(ngModel)]="payData.Comment" name="comment" type="text" placeholder="Комментарий">
+        </div>
+        <div class="right-block-full-field">
+            <p class="comments-right-block">Сколько</p>
+            <input class="field-right-block" [(ngModel)]="payData.Sum" name="sum" (change)="formatSum()" type="text" placeholder="От 1 000 до 75 000 руб.">
+        </div>
+        <div class="right-block-full-field">
+            <p class="comments-right-block">Номер телефона</p>
+            <input class="field-right-block" [(ngModel)]="payData.PhoneNumber" name="phonenumber" maxlength="16" (keyup)="formatPhoneNumber()" type="text" value="+7">
+        </div>
+        <div class="right-block-full-field">
+            <p class="comments-right-block">Эл. почта</p>
+            <input class="field-right-block" [(ngModel)]="payData.Email" name="email" type="text" placeholder="Для уведомлений об оплате">
+        </div>
+        <input type="submit" class="pay-button" value="Создать платеж" />
+    </form>            
+</div>

@@ -1,0 +1,41 @@
+﻿@model IEnumerable<PayService.Model.Data.Transaction>
+
+@{
+    ViewData["Title"] = "Transactions";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Transactions</h2>
+<br />
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Номер карты <a href="/Admin/Transactions/Sort/cardnumber">↓</a> <a href="/Admin/Transactions/SortByDesc/cardnumber">↑</a></th>
+        <th>Дата</th>
+        <th>Сумма</th>
+        <th>Комментарий <a href="/Admin/Transactions/Sort/comment">↓</a> <a href="/Admin/Transactions/SortByDesc/comment">↑</a></th>
+        <th>E-mail</th>
+        <th>Статус</th>
+        <th>Дата создания <a href="/Admin/Transactions/Sort/created">↓</a> <a href="/Admin/Transactions/SortByDesc/created">↑</a></th>
+        <th>Действия</th>
+    </tr>
+
+    @foreach (var transaction in Model)
+    {
+        <tr>
+            <td>@transaction.Id</td>
+            <td>@transaction.CardNumber</td>
+            <td>@transaction.MonthExpired</td>
+            <td>@transaction.Amount</td>
+            <td>@transaction.Comment</td>
+            <td>@transaction.Email</td>
+            <td>@transaction.Status</td>
+            <td>@transaction.Created</td>
+            @*<td>@Html.ActionLink("Удалить", "DeleteTransaction", @transaction.Id)</td>*@
+            <td><a href="/Admin/Transactions/Delete/@transaction.Id">Удалить</a>&nbsp;
+                <a href="/Admin/Transactions/ChangeStatus/@transaction.Id/Accepted">Accepted</a>&nbsp;
+                <a href="/Admin/Transactions/ChangeStatus/@transaction.Id/Insecure">Insecure</a>&nbsp;
+                <a href="/Admin/Transactions/ChangeStatus/@transaction.Id/Illegal">Illegal</a></td>
+        </tr>
+    }
+</table>

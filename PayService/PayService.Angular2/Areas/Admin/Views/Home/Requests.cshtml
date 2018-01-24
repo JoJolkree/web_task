@@ -1,0 +1,42 @@
+﻿@using System.Globalization
+@model IEnumerable<PayService.Model.Data.Request>
+
+@{
+    ViewData["Title"] = "Requests";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Requests</h2>
+<br />
+<table>
+    <tr>
+        <th>ID</th>
+        <th>ИНН <a href="/Admin/Requests/Sort/individualnumber">↓</a> <a href="/Admin/Requests/SortByDesc/individualnumber">↑</a></th>
+        <th>БИК <a href="/Admin/Requests/Sort/banknumber">↓</a> <a href="/Admin/Requests/SortByDesc/banknumber">↑</a></th>
+        <th>Номер счета <a href="/Admin/Requests/Sort/accountnumber">↓</a> <a href="/Admin/Requests/SortByDesc/accountnumber">↑</a></th>
+        <th>Цель <a href="/Admin/Requests/Sort/purpose">↓</a> <a href="/Admin/Requests/SortByDesc/purpose">↑</a></th>
+        <th>Сумма</th>
+        <th>Номер телефона</th>
+        <th>Email</th>
+        <th>Дата <a href="/Admin/Requests/Sort/created">↓</a> <a href="/Admin/Requests/SortByDesc/created">↑</a></th>
+        <th>Действия</th>
+    </tr>
+
+    @foreach (var request in Model)
+    {
+    <tr>
+        <td>@request.Id</td>
+        <td>@request.IndividualNumber</td>
+        <td>@request.BankNumber</td>
+        <td>@request.AccountNumber</td>
+        <td>@request.PurposeOfPayment</td>
+        <td>@request.Amount</td>
+        <td>@request.PhoneNumber</td>
+        <td>@request.Email</td>
+        <td>@request.Created.ToString(CultureInfo.InvariantCulture)</td>
+        @*<td>@Html.ActionLink("Удалить", "DeleteRequest", @request.Id)</td>*@
+        <td><a href="/Admin/Requests/Delete/@request.Id">Удалить</a></td>
+    </tr>
+    }
+</table>
+

@@ -1,0 +1,27 @@
+<app-bank-pay-switch></app-bank-pay-switch>
+<div class="pay-area">
+    <form class="pay-form">                            
+        <p class="about-block-caption"><strong>Сформируйте платёжку и загрузите её в свой банк для подписи</strong></p>
+        <div class="right-block-full-field">
+            <p class="comments-right-block">От кого</p>
+            <input class="field-right-block" [(ngModel)]="payData.Sender" name="sender" type="text" placeholder="ИНН или название плательщика">
+        </div>
+        <div class="right-block-full-field">
+            <p class="comments-right-block">БИК</p>
+            <input class="field-right-block" [(ngModel)]="payData.BIC" name="bic" type="text" (keyup)="formatBic()" maxLength="9" placeholder="9 цифр">
+        </div>
+        <div class="right-block-full-field">
+            <p class="comments-right-block">Номер счёта</p>
+            <input class="field-right-block" [(ngModel)]="payData.Number" name="number" type="text" (keyup)="formatNumber()" maxLength="20" placeholder="20 цифр">
+        </div>
+        <div class="right-block-full-field">
+            <p class="comments-right-block">За что</p>
+            <input class="field-right-block" [(ngModel)]="payData.Goal" name="goal" type="text" placeholder="Комментарий">
+        </div>
+        <div class="right-block-full-field">
+            <p class="comments-right-block">Сколько</p>
+            <input class="field-right-block" [(ngModel)]="payData.Sum" name="sum" type="text" (keyup)="formatSum()" maxlength="5" placeholder="От 1 000 до 75 000 руб.">
+        </div>
+        <input type="submit" class="pay-button" value="Получить файл для интернет-банка" />
+    </form>            
+</div>

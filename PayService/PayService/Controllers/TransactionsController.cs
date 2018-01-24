@@ -11,12 +11,5 @@ namespace PayService.Controllers
 	    public TransactionsController(TransactionsController repository) : base(repository)
 	    {
 	    }
-
-	    [HttpPost]
-	    [Route("/card-payment")]
-	    public IActionResult AddCardPayment()
-	    {
-		    //Use ViewModel
-	    }
     }
 }

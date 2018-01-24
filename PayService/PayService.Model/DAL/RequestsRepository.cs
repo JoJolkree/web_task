@@ -17,8 +17,12 @@ namespace PayService.Model.DAL
 		public void AddRequest(string individualNumber, string bankNumber, string accountNumber, string purposeOfPayment, Vat vat,
 			int amount, string phoneNumber, string email)
 		{
-			DbContext.Requests.Add(new Request(individualNumber, bankNumber, accountNumber, purposeOfPayment, vat, amount,
-				phoneNumber, email));
+			AddRequest(new Request(individualNumber, bankNumber, accountNumber, purposeOfPayment, vat, amount, phoneNumber, email));
+		}
+
+		public void AddRequest(Request request)
+		{
+			DbContext.Requests.Add(request);
 			DbContext.SaveChanges();
 		}
 

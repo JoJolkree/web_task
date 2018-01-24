@@ -1,0 +1,45 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\JoJol\\UrFU\\web\\PayService\\PayService\\PayService.csproj",
+    "projectName": "PayService",
+    "projectPath": "C:\\Users\\JoJol\\UrFU\\web\\PayService\\PayService\\PayService.csproj",
+    "outputPath": "C:\\Users\\JoJol\\UrFU\\web\\PayService\\PayService\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp2.0"
+    ],
+    "frameworks": {
+      "netcoreapp2.0": {
+        "projectReferences": {
+          "C:\\Users\\JoJol\\UrFU\\web\\PayService\\PayService.Model\\PayService.Model.csproj": {
+            "projectPath": "C:\\Users\\JoJol\\UrFU\\web\\PayService\\PayService.Model\\PayService.Model.csproj"
+          }
+        }
+      }
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "target": "Package",
+          "version": "2.0"
+        },
+        "Microsoft.AspNetCore.All": {
+          "target": "Package",
+          "version": "2.0.0"
+        },
+        "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "target": "Package",
+          "version": "2.0.0"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

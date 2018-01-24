@@ -1,0 +1,2 @@
+[class.selected]
+https://angular.io/tutorial/toh-pt3

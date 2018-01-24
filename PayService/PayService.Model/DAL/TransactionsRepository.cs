@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Security.Cryptography.X509Certificates;
 using PayService.Model.Data;
 using PayService.Model.Data.Embed;
 
@@ -14,9 +13,14 @@ namespace PayService.Model.DAL
 		{
 		}
 
-		public void AddTransaction(string cardNumber, DateTime monthExpired, int amount, string comment, string email)
+		public void AddTransaction(string cardNumber, string monthExpired, int amount, string comment, string email)
 		{
-			DbContext.Transactions.Add(new Transaction(cardNumber, monthExpired, amount, comment, email));
+			AddTransaction(new Transaction(cardNumber, monthExpired, amount, comment, email));
+		}
+
+		public void AddTransaction(Transaction transaction)
+		{
+			DbContext.Transactions.Add(transaction);
 			DbContext.SaveChanges();
 		}
 
@@ -26,7 +30,7 @@ namespace PayService.Model.DAL
 			DbContext.SaveChanges();
 		}
 
-		public void ChangeStatusOfTransaction(int id, Status newStatus)
+		public void ChangeStatusOfTransaction(int id, string newStatus)
 		{
 			DbContext.Transactions.First(x => x.Id == id).Status = newStatus;
 			DbContext.SaveChanges();

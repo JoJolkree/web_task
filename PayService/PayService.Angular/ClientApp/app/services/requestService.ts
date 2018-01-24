@@ -1,0 +1,21 @@
+﻿import { Injectable } from "@angular/core";
+import { Http, RequestOptions, Headers } from "@angular/http";
+import { Request } from "../models/Request"
+import 'rxjs/add/operator/toPromise';
+
+
+@Injectable()
+export class RequestService {
+    private url = "/api/requests";
+    private readonly options: RequestOptions;
+
+    constructor(private readonly http: Http) {
+        const headers = new Headers({ 'Content-Type': 'application/json; charset=UTF-8' });
+        this.options = new RequestOptions({ headers: headers });
+    }
+
+    createRequest(request: Request) {
+        return this.http.post(this.url, request, this.options)
+            .toPromise();
+    }
+}

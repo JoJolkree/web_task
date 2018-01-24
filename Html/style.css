@@ -17,7 +17,7 @@ body {
 }
 
 .header {
-    width: 100%;
+    /* width: 100%; */
     margin: 10px;
     /* border-bottom: 1px solid #ccc;
     padding-bottom: 10px; */
@@ -269,11 +269,11 @@ body {
 }
 
 
-@media screen and (max-device-width: 930px) 
+@media screen and (max-width: 930px) 
 {
     body {
         width: 90%;
-        max-width: 100%;
+        /* max-width: 100%; */
     }
 
     .card-form {
@@ -302,7 +302,7 @@ body {
 
 }
 
-@media screen and (max-device-width: 500px)
+@media screen and (max-width: 500px)
 {
     .comments-right-block {
         width: 100%;
